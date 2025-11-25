@@ -1,0 +1,78 @@
+
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title> Match-a-Matcha | Quiz </title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body data-page="quiz">
+<form id="flavor-quiz" class="quiz-form">
+    <!-- question 1: matcha mood 5 choices -->
+     <div class="quiz-question">
+        <h2>1. Matcha Mood</h2>
+        <p class="question-help"> What kind of vibe are you going for?</p>
+
+        <label>
+            <input type="radio" name="mood" value="classic" required>
+            Classic &amp; Calm
+        </label>
+         <label>
+            <input type="radio" name="mood" value="fruity">
+            Fruity &amp; Fresh
+        </label>
+         <label>
+            <input type="radio" name="mood" value="floral">
+            Floral &amp; Soothing
+        </label>
+         <label>
+            <input type="radio" name="mood" value="earthy">
+            Earthy &amp; Roasted
+        </label>
+         <label>
+            <input type="radio" name="mood" value="dessert">
+            Dessert &amp; Indulgent
+        </label>
+     </div>
+
+     <!--question 2: serving style 3 choices-->
+     <div class="quiz-question">
+        <h2> 2. Serving Style</h2>
+        <label>
+            <input type="radio" name="serving" value="hot" required>
+            Hot / Cozy
+        </label>
+         <label>
+            <input type="radio" name="serving" value="iced">
+            Iced / Refreshing
+        </label>
+         <label>
+            <input type="radio" name="serving" value="creamy">
+            Creamy / Foam Top
+        </label>
+     </div>
+        
+     <!--question 3: intensity 2 choices-->
+     <div class="quiz-question">
+        <h2> 3. Intensity</h2>
+        <label>
+            <input type="radio" name="energy" value="light" required>
+            Light
+        </label>
+        <label>
+            <input type="radio" name="energy" value="bold">
+            Bold
+        </label>
+     </div>
+
+     <div class="quiz-actions">
+        <button type="submit" class="btn btn-primary"> See my matcha drink</button>
+        <a href="index.html" class="btn btn-outline">Cancel</a>
+     </div>
+</form>
+<script src="scripts/scripts.js"></script>
+</body>
+</html>
+

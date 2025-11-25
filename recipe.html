@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Match-a-Matcha | Recipe</title>
+
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+
+    <body data-page="recipe">
+
+        <!--header-->
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="logo">Match-a-Matcha</a>
+                <nav class="nav">
+                    <a href="index.html#about">About</a>
+                    <a href="quiz.html">Quiz</a>
+                    <a href="catalog.html">Drink Catalog</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!--main-->
+        <main class="section">
+            <div class="container recipe-layout" id="recipe-container">
+                <!--drink details-->
+                <div class="recipe-main">
+                    <h1 id="recipe-name">Loading recipe</h1>
+                    <p id="recipe-description" class="recipe-description"></p>
+                    <p class="recipe-meta">
+                        <span id="recipe-category"></span> - 
+                        <span id="recipe-serving"></span> - 
+                        <span id="recipe-energy"></span> 
+                    </p>
+
+                    <h2>Ingredients</h2>
+                    <ul id="recipe-ingredients" class="recipe-list"></ul>
+
+                    <h2>Instructions</h2>
+                    <ol id="recipe-steps" class="recipe-list"></ol>
+
+                    <p class="result-pastry">
+                        Suggested pastry pairing:
+                        <strong id="recipe-pastry"></strong>
+                    </p>
+
+                    <div class="recipe-actions">
+                        <a href="catalog.html" class="btn btn-outline">Back to catalog</a>
+                        <a href="quiz.html" class="btn btn-primary">Find another match</a>
+                    </div>
+
+                </div>
+
+                <!--visuals-->
+                <aside class="recipe-side">
+                    <!--image placeholder-->
+                    <div class="image-placeholder">
+                        <span id="recipe-image-label">Drink Image</span>
+                    </div>
+
+                    <p class="side-note">
+                        Tip: [Insert something cute/funny]
+                    </p>
+
+                </aside>
+
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <small> Match-a-Matcha | Crafted for Class</small>
+            </div>
+        </footer>
+
+        <script src="scripts/scripts.js"></script>
+    </body>
+</html>

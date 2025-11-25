@@ -3,9 +3,580 @@
 /* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
 /* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
 
-body {
+/** body {
     background: magenta;
 }
 p {
     font-size: 2em;
+} 
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap");
+
+/** colors! */
+
+:root {
+    --matcha-green: #21572d;
+    --cream: #fff6ee;
+    --espresso-brown: #4b3832;
+    --off-white: #fcfcf1;
+    --dusty-brown: #c7ab84;
+    --text-main: #2a2623;
+    --text-muted: #7b736d;
+    --border-soft: #e6dfd5;
+
+    --radius-lg: 18px;
+    --radius-md: 12px;
+    --shadow-soft: 0 12px 300px rgba(0, 0, 0, 0.08);
+    --shadow-subtle: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--off-white);
+    color: var(--text-main);
+    font-family: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.6;
+}
+
+/* for selections */
+
+::selection {
+    background: rgba(33, 87, 45, 0.18);
+}
+
+/*type */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Libre Baskerville", "Times New Roman", serif;
+    color: var(--espresso-brown);
+    margin-top: 0;
+}
+
+/* page title */
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+}
+
+/* section header */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0.6rem;
+
+}
+
+/* recipe titles */
+h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.4rem;
+}
+
+.section-intro {
+    color: var(--text-muted);
+    max-width: 640px;
+    font-size: 0.98rem;
+}
+
+/*nav */
+.nav a,
+.btn {
+    font-family: "Instrument Sans", system-ui, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+/*layers */
+
+.container {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section--cream {
+    background: var(--cream);
+}
+
+.narrow {
+    max-width: 720px;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 2.25rem;
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        grid-template-columns: 1fr;
+
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+}
+
+/*--*/
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: rgba(225, 246, 238, 0.93);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(231, 219, 204, 0.8);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+
+}
+
+.logo {
+    text-decoration: none;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    color: var(--espresso-brown);
+    font-size: 1.3rem;
+
+}
+
+.nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--espresso-brown);
+    padding-bottom: 2px solid transparent;
+
+}
+
+.nav a:hover {
+    border-bottom-color: rgba(199, 171, 132, 0.6);
+
+}
+
+.nav a.active {
+    color: var(--matcha-green);
+    border-bottom-color: var(--matcha-green);
+
+}
+
+/* her0 */
+
+.hero {
+    padding: 3.5rem 0 2.5rem;
+
+}
+
+.hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+.hero-text p {
+    color: var(--text-muted);
+    max-width: 520px;
+    margin-bottom: 1.6rem;
+
+}
+
+.hero-image img {
+    max-width: 100%;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+
+}
+
+@media (max-width: 768px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* btns */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.6rem;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 
+    transform 0.1s ease,
+    box-shadow 0.1s ease,
+    background 0.1s ease,
+    border-color 0.1s ease;
+    color 0.1s ease;
+}
+
+.btn-primary {
+    background: var(--matcha-green);
+    color: var(--off-white);
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-primary:hover {
+    background: #184220;
+    transform: translateY(-1px);
+    box-shadow: 0 16px 35px rgba(33, 87, 45, 0.3);
+
+}
+
+.btn:active {
+    transform: translateY(0) scale(0.97);
+    box-shadow: var(--shadow-subtle);
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--matcha-green);
+    border-color: var(--matcha-green);
+}
+
+.btn-outline:hover {
+    background: rgba(199, 171, 132, 0.12);
+}
+
+.btn-secondary {
+    background: var(--cream);
+    color: var(--espresso-brown);
+    border-color: var(--border-soft);
+
+}
+
+.btn-secondary:hover {
+    background: #f1e2d2
+}
+
+
+/* cards */
+
+.card-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.drink-card,
+.result-card {
+    position: relative;
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    padding: 1.3rem 1.4rem 1.4rem;
+    box-shadow: var(--shadow-subtle);
+    overflow: hidden;
+    transition: 
+    transform 0.18s ease,
+    box-shadow 0.18s ease,
+    background 0.18s ease;
+}
+
+.drink-card::before,
+.result-card::before {
+    content: "";
+    position: absolute;
+    inset:0;
+    background: linear-gradient(
+        135deg,
+        rgba(199, 171, 132, 0.13),
+        transparent 60%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.18s ease;
+}
+
+.drink-card::before,
+.result-card::before {
+    opacity: 1;
+}
+
+.drink-card p {
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+
+}
+
+.result-meta,
+.result-meta {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+/* filters */
+
+.catalog-filter {
+    margin: 1.8rem 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
+.filter-btn {
+    border-radius: 999px;
+    border: 1px solid var(--cream);
+    padding: 0.45rem 0.95rem;
+    cursor: pointer;
+    font-family: "Instrument Sans", system-ui, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--espresso-brown);
+    transition: 
+    background 0.12s ease,
+    border-color 0.12s ease,
+    transform 0.1s ease;
+}
+
+.filter-btn:hover {
+    background: #f1e2d2;
+
+}
+
+.filter-btn.active {
+    background: var(--matcha-green);
+    border-color: var(--matcha-green);
+    color: var(--off-white);
+}
+
+/*forms*/
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-top: 0.25rem;
+    padding: 0.55rem 0.75rem;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-soft);
+    font: inherit;
+    color: var(--text-main);
+    background: #fff;
+}
+
+input:focus,
+textarea:focus{
+    outline: 2px solid rgba(33, 87, 45, 0.35);
+    outline-offset: 1px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.85rem;
+    font-size: 0.92rem;
+}
+
+/* quiz */
+
+.quiz-form {
+    background: var(--cream);
+    padding: 1.9rem 1.75rem 1.6rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+.quiz-question + .quiz-question {
+    margin-top: 1.5rem;
+}
+
+.quiz-question h2 {
+    margin-bottom: 0.35rem;
+
+}
+
+.question-help {
+    margin-bottom: 0.7rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+
+}
+
+.quiz-question label {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.4rem 0.55rem;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: 
+    background 0.12s ease,
+    border-color 0.12s ease,
+    transform 0.08s ease;
+    border: 1px solid transparent;
+}
+
+.quiz-question input[type="radio"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 2px solid var(--border-soft);
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0;
+    background: #fff;
+}
+
+.quiz-question input[type="radio"]::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: inherit;
+    background: var(--dusty-brown);
+    opacity: 0;
+    transition: opacity 0.12s ease;
+}
+
+.quiz-question label:hover {
+    background: rgba(199, 171, 132, 0.12);
+}
+
+.quiz-question input[type="radio"]::after {
+    opacity: 1;
+}
+
+.quiz-question input[type="radio"]:checked {
+    border-color: var(--matcha-green);
+}
+
+.quiz-question label:has(input[type="radio"]:checked) {
+    background: rgba(33, 87, 45, 0.08);
+    border-color: var(--matcha-green);
+}
+
+.quiz-question input[type="radio"]:checked + span {
+    font-weight: 500;
+}
+
+.quiz-actions {
+    margin-top: 1.9rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+/*recipe */
+
+.recipe-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 0.9fr);
+    gap: 2.3rem;
+}
+
+.recipe-description {
+    color: var(--text-muted);
+
+}
+
+.recipe-list { 
+    padding-left: 1.2rem;
+}
+
+.recipe-list li {
+    margin-bottom: 0.35rem;
+}
+
+.image-placeholder {
+    position: relative;
+    width: 100%;
+    padding-top: 70%;
+    background: repeating-linear-gradient(
+        -45deg,
+        #f7efe2,
+        #f7efe2 6px,
+        #efe3d3 6px,
+        #efe3d3 12px
+    );
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+}
+
+#recipe-image-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.92rem;
+    color: var(--espresso-brown);
+    text-align: center;
+}
+
+.side-note {
+    margin-top: 0.85rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.recipe-actions {
+    margin-top: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    .recipe-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*other*/
+
+.info-list {
+    padding-left: 1.1rem;
+}
+
+.info-list li {
+    margin-bottom: 0.3rem;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.result-pastry {
+    margin-top: 0.8rem;
+}
+
+.site-footer {
+    border-top: 1px solid rgba(231, 219, 204, 0.8);
+    padding: 1.2rem 0 1.8rem;
+    margin-top: 2rem;
+    font-size: 0.85rem;
+    color: var(--text-muted)
 }

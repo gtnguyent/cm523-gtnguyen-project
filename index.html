@@ -1,26 +1,171 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <!-- PUT A TITLE IN HERE -->
-    <title>This is the demo</title>
+    <!-- <title>This is the demo</title> -->
     <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
+    <!-- <meta name="description" content="describe content of the page here...." /> -->
     <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <link rel="stylesheet" href="styles/normalize.css" />
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
     
     <!-- LINK TO YOUR STYLES -->
-    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- <link rel="stylesheet" href="styles/styles.css" /> -->
     <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <script src="scripts/scripts.js" defer></script>
-  </head>
-  <body>
+    <!-- <script src="scripts/scripts.js" defer></script> -->
+  <!-- </head> -->
+  <!-- <body> -->
     <!-- YOUR HTML GOES HERE -->
 
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
+  <!-- </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Match-a-Matcha | Home </title>
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="logo">Match-a-Matcha</a>
+        <nav class="nav">
+          <a href="index.html#about">About</a>
+          <a href="quiz.html">Quiz</a>
+          <a href="catalog.html">Drink Catalog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--hero-->
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1> Find your perfect matcha or coffee (and pastry!) </h1>
+            <p>
+              Take a short quiz and get a curated drink + pastry pairing that matches your mood, serving style, and energy level.
+            </p>
+            <a href="quiz.html" class="btn btn-primary"> Take the flavor quiz</a>
+          </div>
+          <div class="hero-images">
+            <img src="images/octocat.png" alt="Matcha and coffee illustration">
+
+          </div>
+        </div>
+      </section>
+
+      <!--About-->
+    <section id="about" class="section">
+      <section class="container two-column">
+        <div>
+          <h2> About Match-a-Matcha</h2>
+          <p>Match-a-Matcha is a personalized recipe curator for matcha and coffee lovers.
+            Instead of scrolling endless recipe lists, you answer three quick questions
+            and we suggest a drink + pastry pairing that fits your vibe.
+          </p>
+          <p>Whether you're a student cramming for midterms, a creative looking for cozy
+            cafe vibes at home, or a busy professional who wants something simple but
+            special, we've got you.
+          </p>
+        </div>
+        <div>
+          <h3> What you'll find here</h3>
+          <ul class="info-list">
+            <li>Flavor quiz that learns your preferences</li>
+            <li>Curated drink recipes with clear steps</li>
+            <li>Suggested pastry pairings for each drink</li>
+            <li>Seasonal and classic drink collections</li>
+          </ul> 
+        </div>
+    </section>
+    
+    <!--featured seasonal drinks -->
+    <section class="section section-light">
+      <div class="container">
+        <h2>Seasonal & Favorite Drinks</h2>
+        <p class="section-intro">
+          A small taste of the 30+ drinks in the catalog.
+        </p>
+        <div class="card-grid" id="featured-drinks">
+          <article class="drink-card">
+            <h3>Cozy Maple Matcha Latte</h3>
+            <p> Warm, lightly sweetened Matcha with a maple twist.</p>
+            <button class="btn btn-secondary view-recipe-btn" data-drink-id="cozy-maple-matcha">
+              View recipe
+            </button>
+          </article>
+          <article class="drink-card">
+            <h3>Iced Vanilla Sweet Cream Cold Brew</h3>
+            <p> Bold cold brew with a soft, creamy top.</p>
+            <button class="btn btn-secondary view-recipe-btn" data-drink-id="vanilla-cold-brew">
+              View recipe
+            </button>
+          </article>
+          <article class="drink-card">
+            <h3>Strawberry Matcha Sparkler</h3>
+            <p> Refreshing sparkling drink with matcha + strawberry.</p>
+            <button class="btn btn-secondary view-recipe-btn" data-drink-id="strawberry-sparkler">
+              View recipe
+            </button>
+          </article>
+        </div>
+
+        <div class="centered">
+          <a href="catalog.html" class="btn btn-outline">View full drink catalog</a>
+        </div>
+      </div>
+    </section>
+  
+    <!--contact-->
+    <section id="contact" class="section">
+      <div class="container two-column">
+        <div>
+          <h2> Contact </h2>
+          <p>
+            Have a drink idea you want to see, or feedback on the quiz results? Send a quick message!
+          </p>
+        </div>
+        <form class="contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name">
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" placeholder="Share your thoughts, ideas, or favorite drinks."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </section>
+    </main>
+    
+    <footer class="site-footer">
+      <div class="container">
+        <small> Matcha-a-Matcha | Crafted for Class</small>
+      </div>
+    </footer>
+
+    <script src="scripts/scripts.js"></script>
+        </div>
+      </div>
+    </section>
+
   </body>
 </html>
