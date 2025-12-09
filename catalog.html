@@ -4,34 +4,42 @@
     <head>
         <meta charset="UTF-8" />
         <title> Match-a-Matcha | Drink Catalog</title>
-
+<!-- normalize css for default across browsers-->
+        <link rel="icon" type="image/png" href="images/icons/favicon.png">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
+    <!-- for js-->
     <body data-page="catalog">
 
         <!--header-->
         <header class="site-header">
-            <div class="container head-inner">
-                <a href="index.html" class="logo">Match-a-Matcha</a>
+            <div class="container header-inner">
+                <!-- logo links to homepage-->
+                <a href="index.html" class="logo">
+                <img src="images/icons/navlogo.png" alt="Match-a-Matcha logo">
+                </a>
                 <nav class="nav">
                     <a href="index.html#about">About</a>
                     <a href="quiz.html">Quiz</a>
-                    <a href="catalog.html" class="active">Drink Catalog</a>
+                    <a href="catalog.html">Drink Catalog</a>
                     <a href="index.html#contact">Contact</a>
                 </nav>
             </div>
         </header>
 
         <!--main-->
+        <!-- .section for vert padding, .container max width-->
         <main class="section">
             <div class="container">
                 <h1>Drink Catalog</h1>
+                <!-- intro text on how to use catalog-->
                 <p class="section-intro">
                     Explore all curated drinks. Hover to read a short description, click to view full recipe.
                 </p>
 
                 <!--filter buttons-->
+                <!-- data filter attribute so scripts.js knows which category to show-->
                 <div class="catalog-filters">
                     <button class="filter-btn active" data-filter="all">All</button>
                     <button class="filter-btn" data-filter="seasonal">Seasonal</button>
@@ -39,22 +47,32 @@
                     <button class="filter-btn" data-filter="fruit">Fruit Drinks</button>
                     <button class="filter-btn" data-filter="floral">Floral Drinks</button>
                     <button class="filter-btn" data-filter="earthy">Earthy Drinks</button>
-                    <button class="filter-btn" data-filter="coffee">Coffee Drinks</button>
                     <button class="filter-btn" data-filter="dessert">Dessert Drinks</button>
                 </div>
 
                 <!--drink grid-->
+                <!-- this empty div is where js will add drink cards
+                 initCatalogPage() calls renderCatalog("all") -> loops through DRINKS array, creates drink card for each drink, appends them in catalog grid element-->
                 <div id="catalog-grid" class="card-grid catalog-grid">
-                    <!--insert drink cards-->
+                    <!--insert drink cards with JS-->
                 </div>
             </div>
         </main>
 
-        <footer class="site-footer">
-            <div class="container">
-                <small> Match-a-Matcha | Crafted for Class</small>
-            </div>
-        </footer>
+        
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <small class="footer-brand">Match-a-Matcha | Crafted for Class</small>
+
+    <nav class="footer-nav">
+      <a href="https://docs.google.com/document/d/1TR--OzxtCsIFdxgskKqjWMMFl1By7siLlSlN7ZXpQGo/edit?usp=sharing" target="_blank">Project Proposal</a>
+      <a href="https://drive.google.com/file/d/1gGSENmvlhSsWX-FJeGdnVgk24zYr3-tz/view?usp=sharing" target="_blank">Wireframe</a>
+      <a href="https://docs.google.com/document/d/1i5Nj1r7BTeDfueztqC64KYNHTq1j-Rxv7ei8_B9Bz7Y/edit?usp=sharing" target="_blank">Design Document</a>
+      <a href="https://docs.google.com/document/d/1zbZ5PWwIy_CmJ6sI5nsBdWueOczNEqQ1zeE9qBHx5rU/edit?usp=sharing" target="_blank">User Experience Report</a>
+      <a href="docs/style-guide.pdf" target="_blank">Resources</a>
+    </nav>
+  </div>
+</footer>
 
         <script src="scripts/scripts.js"></script>
 

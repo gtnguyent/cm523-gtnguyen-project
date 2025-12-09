@@ -5,6 +5,7 @@
         <meta charset="UTF-8" />
         <title> Match-a-Matcha | Recipe</title>
 
+        <link rel="icon" type="image/png" href="images/icons/favicon.png">
         <link rel="stylesheet" href="styles/normalize.css">
         <link rel="stylesheet" href="styles/styles.css">
     </head>
@@ -14,12 +15,14 @@
         <!--header-->
         <header class="site-header">
             <div class="container header-inner">
-                <a href="index.html" class="logo">Match-a-Matcha</a>
+                <a href="index.html" class="logo">
+                <img src="images/icons/navlogo.png" alt="Match-a-Matcha logo">
+                </a>
                 <nav class="nav">
                     <a href="index.html#about">About</a>
                     <a href="quiz.html">Quiz</a>
                     <a href="catalog.html">Drink Catalog</a>
-                    <a href="index.html#contact">Contact</a>
+                    <!-- <a href="index.html#contact">Contact</a> -->
                 </nav>
             </div>
         </header>
@@ -27,10 +30,12 @@
         <!--main-->
         <main class="section">
             <div class="container recipe-layout" id="recipe-container">
-                <!--drink details-->
+                <!--drink details on left side-->
                 <div class="recipe-main">
+                    <!-- ids filled by js-->
                     <h1 id="recipe-name">Loading recipe</h1>
                     <p id="recipe-description" class="recipe-description"></p>
+                    <!--metadata row - category, serving style, intensify -->
                     <p class="recipe-meta">
                         <span id="recipe-category"></span> - 
                         <span id="recipe-serving"></span> - 
@@ -48,6 +53,7 @@
                         <strong id="recipe-pastry"></strong>
                     </p>
 
+                    <!-- nav buttons-->
                     <div class="recipe-actions">
                         <a href="catalog.html" class="btn btn-outline">Back to catalog</a>
                         <a href="quiz.html" class="btn btn-primary">Find another match</a>
@@ -56,17 +62,30 @@
                 </div>
 
                 <!--visuals-->
-                <aside class="recipe-side">
-                    <!--image placeholder-->
-                    <div class="image-placeholder">
-                        <span id="recipe-image-label">Drink Image</span>
-                    </div>
+<aside class="recipe-side">
+    <!-- image area -->
+<div class="image-placeholder">
+  <img
+    id="recipe-image"
+    class="result-drink-image"
+    alt=""
+  >
+</div>
 
-                    <p class="side-note">
-                        Tip: [Insert something cute/funny]
-                    </p>
 
-                </aside>
+    <section class="recipe-extra" id="recipe-upgrades-section">
+        <h3> Optional Upgrades</h3>
+        <ul id="recipe-upgrades" class="recipe-list"></ul>
+    </section>
+
+    <section class="recipe-extra" id="recipe-flavor-section">
+        <h3>Flavor Notes</h3>
+        <ul id="recipe-flavor-notes" class="recipe-list"></ul>
+    </section>
+
+
+</aside>
+
 
             </div>
         </main>

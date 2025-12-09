@@ -1,49 +1,33 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <!-- PUT A TITLE IN HERE -->
-    <!-- <title>This is the demo</title> -->
-    <!-- PUT A DESCRIPTION IN HERE -->
-    <!-- <meta name="description" content="describe content of the page here...." /> -->
-    <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
-    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
-    <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
-    
-    <!-- LINK TO YOUR STYLES -->
-    <!-- <link rel="stylesheet" href="styles/styles.css" /> -->
-    <!-- LINK TO EXTERNAL JS LIBRARIES HERE -->
-    <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
-    <!-- <script src="scripts/scripts.js" defer></script> -->
-  <!-- </head> -->
-  <!-- <body> -->
-    <!-- YOUR HTML GOES HERE -->
-
-    <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
-  <!-- </body>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" /> <!--title page in browser tab-->
     <title>Match-a-Matcha | Home </title>
 
+    <!--consistent default styling across browsers-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-
+<!--data-page for scripts.js to know JS initializer to run-->
   <body data-page="home">
+    <!--site header and navigation-->
     <header class="site-header">
       <div class="container header-inner">
-        <a href="index.html" class="logo">Match-a-Matcha</a>
+        <!--logo brings you to the homepage-->
+          <a href="index.html" class="logo">
+          <img src="images/icons/navlogo.png" alt="Match-a-Matcha logo">
+          </a>
+
+        
         <nav class="nav">
+          <!--link to about section-->
           <a href="index.html#about">About</a>
+          <!-- sep pages of the site-->
           <a href="quiz.html">Quiz</a>
           <a href="catalog.html">Drink Catalog</a>
-          <a href="#contact">Contact</a>
+          <!-- <a href="#contact">Contact</a> -->
         </nav>
       </div>
     </header>
@@ -52,38 +36,48 @@
       <!--hero-->
       <section class="hero">
         <div class="container hero-inner">
-          <div class="hero-text">
-            <h1> Find your perfect matcha or coffee (and pastry!) </h1>
+          <!--text on the left side of homepage-->
+          <div class="hero-text hero-card hero-card--copy">
+            <h1> Find Your Perfect Match!</h1>
             <p>
-              Take a short quiz and get a curated drink + pastry pairing that matches your mood, serving style, and energy level.
+              Feeling a matcha, but don't know what you want? Take a 3-question quiz to discover the curated matcha drink that matches your cravings.
             </p>
-            <a href="quiz.html" class="btn btn-primary"> Take the flavor quiz</a>
+            <!--main CTA button-->
+            <a href="quiz.html" class="btn btn-primary"> Find My Match</a>
           </div>
-          <div class="hero-images">
-            <img src="images/octocat.png" alt="Matcha and coffee illustration">
+          <!--rotating matcha drinks -->
+          <div class="hero-image hero-card hero-card--image">
+            <div class="hero-image-inner">
+               <img
+              id="hero-drink"
+              src="images/drinks/hot-chai-matcha-latte.png"
+              alt="Matcha drink illustration">
+  </div>
+</div>
 
-          </div>
+
         </div>
       </section>
 
       <!--About-->
     <section id="about" class="section">
+      <!--for css two column layout-->
       <section class="container two-column">
         <div>
           <h2> About Match-a-Matcha</h2>
-          <p>Match-a-Matcha is a personalized recipe curator for matcha and coffee lovers.
+          <p>Match A Matcha is a personalized recipe curator for matcha lovers.
             Instead of scrolling endless recipe lists, you answer three quick questions
-            and we suggest a drink + pastry pairing that fits your vibe.
+            and discover a drink that suits your taste as well as a pastry pairing to go with it.
           </p>
-          <p>Whether you're a student cramming for midterms, a creative looking for cozy
-            cafe vibes at home, or a busy professional who wants something simple but
+          <p>Whether you're a student searching for convenience, a creative looking for 
+            cafe-style drinks at home, or a busy professional who wants something simple but
             special, we've got you.
           </p>
         </div>
         <div>
           <h3> What you'll find here</h3>
           <ul class="info-list">
-            <li>Flavor quiz that learns your preferences</li>
+            <li>Matcha quiz to find your beverage</li>
             <li>Curated drink recipes with clear steps</li>
             <li>Suggested pastry pairings for each drink</li>
             <li>Seasonal and classic drink collections</li>
@@ -94,34 +88,52 @@
     <!--featured seasonal drinks -->
     <section class="section section-light">
       <div class="container">
-        <h2>Seasonal & Favorite Drinks</h2>
+        <h2>Seasonal Drinks</h2>
         <p class="section-intro">
           A small taste of the 30+ drinks in the catalog.
         </p>
+        <!--static cards, buttons JS homepage-->
         <div class="card-grid" id="featured-drinks">
-          <article class="drink-card">
-            <h3>Cozy Maple Matcha Latte</h3>
-            <p> Warm, lightly sweetened Matcha with a maple twist.</p>
-            <button class="btn btn-secondary view-recipe-btn" data-drink-id="cozy-maple-matcha">
-              View recipe
-            </button>
-          </article>
-          <article class="drink-card">
-            <h3>Iced Vanilla Sweet Cream Cold Brew</h3>
-            <p> Bold cold brew with a soft, creamy top.</p>
-            <button class="btn btn-secondary view-recipe-btn" data-drink-id="vanilla-cold-brew">
-              View recipe
-            </button>
-          </article>
-          <article class="drink-card">
-            <h3>Strawberry Matcha Sparkler</h3>
-            <p> Refreshing sparkling drink with matcha + strawberry.</p>
-            <button class="btn btn-secondary view-recipe-btn" data-drink-id="strawberry-sparkler">
-              View recipe
-            </button>
-          </article>
-        </div>
+          <article class="featured-drink-card">
+            <img
+            class="featured-drink-image"
+            src="images/drinks/eggnog-matcha-latte.png"
+            alt="Eggnog Matcha Latte">
+    <h3>Eggnog Matcha Latte</h3>
+    <p> Lightly sweetened matcha latte blended with holiday eggnog.</p>
+    <button class="btn btn-secondary view-recipe-btn" data-drink-id="eggnog-matcha-latte">
+      View recipe
+    </button>
+  </article>
 
+  <article class="featured-drink-card">
+    <img
+      class="featured-drink-image"
+      src="images/drinks/gingerbread-matcha-latte.png"
+      alt="Iced vanilla sweet cream cold brew with foam on top">
+    <h3>Gingerbread Matcha Latte</h3>
+    <p>Bold gingerbread-spiced matcha latte with cozy molasses notes.
+</p>
+    <button class="btn btn-secondary view-recipe-btn" data-drink-id="gingerbread-matcha-latte">
+      View recipe
+    </button>
+  </article>
+
+  <article class="featured-drink-card">
+    <img
+      class="featured-drink-image"
+      src="images/drinks/white-chocolate-peppermint-matcha-latte.png"
+      alt="Strawberry matcha sparkler in a glass with ice">
+    <h3>White Chocolate Peppermint Matcha Latte</h3>
+    <p> Matcha latte infused with white chocolate and peppermint.</p>
+    <button class="btn btn-secondary view-recipe-btn" data-drink-id="white-chocolate-peppermint-matcha-latte">
+      View recipe
+    </button>
+  </article>
+</div>
+
+
+        <!-- full catalog-->
         <div class="centered">
           <a href="catalog.html" class="btn btn-outline">View full drink catalog</a>
         </div>
@@ -129,7 +141,7 @@
     </section>
   
     <!--contact-->
-    <section id="contact" class="section">
+    <!-- <section id="contact" class="section">
       <div class="container two-column">
         <div>
           <h2> Contact </h2>
@@ -137,7 +149,8 @@
             Have a drink idea you want to see, or feedback on the quiz results? Send a quick message!
           </p>
         </div>
-        <form class="contact-form">
+         just for UX -->
+        <!-- <form class="contact-form">
           <label>
             Name
             <input type="text" name="name" placeholder="Your name">
@@ -160,12 +173,25 @@
       <div class="container">
         <small> Matcha-a-Matcha | Crafted for Class</small>
       </div>
-    </footer>
+    </footer> --> 
 
+
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <small class="footer-brand">Match-a-Matcha | Crafted for Class</small>
+
+    <nav class="footer-nav">
+      <a href="https://docs.google.com/document/d/1TR--OzxtCsIFdxgskKqjWMMFl1By7siLlSlN7ZXpQGo/edit?usp=sharing" target="_blank">Project Proposal</a>
+      <a href="https://drive.google.com/file/d/1gGSENmvlhSsWX-FJeGdnVgk24zYr3-tz/view?usp=sharing" target="_blank">Wireframe</a>
+      <a href="https://docs.google.com/document/d/1i5Nj1r7BTeDfueztqC64KYNHTq1j-Rxv7ei8_B9Bz7Y/edit?usp=sharing" target="_blank">Design Document</a>
+      <a href="https://docs.google.com/document/d/1zbZ5PWwIy_CmJ6sI5nsBdWueOczNEqQ1zeE9qBHx5rU/edit?usp=sharing" target="_blank">User Experience Report</a>
+      <a href="docs/style-guide.pdf" target="_blank">Resources</a>
+    </nav>
+  </div>
+</footer>
+
+    <!-- main js file-->
     <script src="scripts/scripts.js"></script>
-        </div>
-      </div>
-    </section>
 
   </body>
 </html>

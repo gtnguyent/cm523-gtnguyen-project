@@ -11,9 +11,12 @@ p {
 } 
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Libre+Baskerville:wght@400;700&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Jua&family=Poppins:wght@300;400;500;600;700&display=swap");
+
 
 /** colors! */
+/** css variables for colors, radiuses, and shadows. easier to reuse for whole site */
 
 :root {
     --matcha-green: #21572d;
@@ -24,6 +27,8 @@ p {
     --text-main: #2a2623;
     --text-muted: #7b736d;
     --border-soft: #e6dfd5;
+    --ivory-ish: #fffcd8; 
+    --blue: #3470b7;
 
     --radius-lg: 18px;
     --radius-md: 12px;
@@ -31,17 +36,21 @@ p {
     --shadow-subtle: 0 4px 10px rgba(0, 0, 0, 0.06);
 }
 
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
 
+/* base style */ 
+
 body {
     margin: 0;
-    background: var(--off-white);
-    color: var(--text-main);
-    font-family: "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--ivory-ish);
+    color: var(--text-main); 
+    font-family: "Poppins", system-ui, sans-serif;
+    /* "Instrument Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; */
     line-height: 1.6;
 }
 
@@ -57,7 +66,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Libre Baskerville", "Times New Roman", serif;
+    font-family: "Jua", sans-serif;
     color: var(--espresso-brown);
     margin-top: 0;
 }
@@ -83,17 +92,17 @@ h3 {
 }
 
 .section-intro {
-    color: var(--text-muted);
-    max-width: 640px;
-    font-size: 0.98rem;
+    color: var(--espresso-brown);
+    max-width: none;
+    font-size: 1rem;
 }
 
 /*nav */
 .nav a,
 .btn {
-    font-family: "Instrument Sans", system-ui, sans-serif;
+    font-family: "Poppins", system-ui, sans-serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
@@ -102,10 +111,11 @@ h3 {
 
 .container {
     width: 100%;
-    max-width: 1040px;
+    max-width: 1240px;
     margin: 0 auto;
     padding: 0 1.25rem;
 }
+/* vertical spacing */
 
 .section {
     padding: 3rem 0;
@@ -115,15 +125,62 @@ h3 {
     background: var(--cream);
 }
 
+/* results page */
 .narrow {
     max-width: 720px;
 }
+
+.result-drink-image {
+    width: 100%;
+    max-width: 260px;      
+    aspect-ratio: 1 / 1;  
+    object-fit: contain;   
+    display: block;
+    margin: 0 auto 1.2rem; 
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-subtle);
+}
+
+/* about + contact */
+
+/* .two-column {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 2.25rem;
+} */
 
 .two-column {
     display: grid;
     grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
     gap: 2.25rem;
+    align-items: stretch;
 }
+
+.two-column > * {
+    height: 100%;
+}
+
+.two-column p,
+.two-column li {
+    font-size: 1.25rem;     
+    line-height: 1.6;       
+}
+
+.about-text p,
+.about-list li {
+    font-size: 1.25rem;
+    line-height: 1.6;
+}
+
+.two-column h2 {
+    font-size: 3rem;   
+}
+
+
+
+
+
+/* adjustments for smaller screens */
 
 @media (max-width: 768px) {
     .two-column {
@@ -133,6 +190,7 @@ h3 {
 
     h1 {
         font-size: 2.4rem;
+        margin-bottom: 0.5rem;
     }
 
     h2 {
@@ -141,17 +199,30 @@ h3 {
 
 }
 
-/*--*/
+/*-site header-*/
+/* nav stays at top when strolling */
 
 .site-header {
     position: sticky;
     top: 0;
     z-index: 20;
-    background: rgba(225, 246, 238, 0.93);
+    background: #bcc87f;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(231, 219, 204, 0.8);
 }
 
+.logo img {
+    height: 90px;
+    width: auto;
+    display: block;
+}
+
+.header-inner {
+    padding: 0.75rem 0;
+}
+
+
+/* flex layout align logo and nav horizontally */
 .header-inner {
     display: flex;
     align-items: center;
@@ -159,7 +230,7 @@ h3 {
     padding: 0.75rem 0;
 
 }
-
+/*logo style - might change for a hand drawn logo */ 
 .logo {
     text-decoration: none;
     font-family: "Libre Baskerville", serif;
@@ -168,33 +239,36 @@ h3 {
     font-size: 1.3rem;
 
 }
-
+ /* nav links */ 
 .nav a {
     margin-left: 1rem;
     text-decoration: none;
-    color: var(--espresso-brown);
-    padding-bottom: 2px solid transparent;
+    color: var(--cream);
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
 
 }
 
 .nav a:hover {
-    border-bottom-color: rgba(199, 171, 132, 0.6);
+    border-bottom-color:#3470b7; 
+
 
 }
 
+/* highlights current page */
+
 .nav a.active {
-    color: var(--matcha-green);
-    border-bottom-color: var(--matcha-green);
+    border-bottom-color: #3470b7;
 
 }
 
 /* her0 */
 
 .hero {
-    padding: 3.5rem 0 2.5rem;
+    padding: 2.5rem 0 1.5rem;
 
 }
-
+/* text left, image right */
 .hero-inner {
     display: grid;
     grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
@@ -202,13 +276,105 @@ h3 {
     align-items: center;
 }
 
+.hero-image img {
+    max-width: 100%;
+    display: block;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-soft);
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+/* Shared card styling for both sides of the hero */
+.hero-card {
+    background: #fff9e8;          
+    border-radius: 28px;
+    padding: 1.8rem 2rem;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.07);
+}
+
+
+.hero-card--copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #bcc685;
+    max-width: 90%;
+    padding: 3rem 4rem;
+}
+
+.hero-card--copy h1 {
+    color: #1b2c05 !important;
+}
+
+.hero-card--copy p {
+    color: var(--espresso-brown) !important;
+}
+
+
+
+/* OUTER BLUE GRID FRAME */
+.hero-card--image {
+  background-color:#3470b7; 
+  border-radius: 32px;
+  padding: 2.1rem;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+
+  /* cream grid lines, pure CSS */
+  background-image:
+    linear-gradient(to right, rgba(255, 252, 216, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 252, 216, 0.35) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* INNER CREAM BOX, SAME SIZE AS IMAGE AREA */
+.hero-image-inner {
+  background: #f9f0de;       
+  border-radius: 24px;
+  padding: 1rem;
+
+  max-width: 380px;          
+  width: 100%;
+  aspect-ratio: 1 / 1;       
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMAGE ITSELF */
+.hero-image-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 18px;       
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+.hero-card--image img {
+    width: 100%;
+    max-width: 360px;      
+    height: auto;
+    object-fit: contain;
+    border-radius: 18px;  
+}
+
+/* description */
+
 .hero-text p {
     color: var(--text-muted);
     max-width: 520px;
     margin-bottom: 1.6rem;
 
 }
-
+ /*image*/
 .hero-image img {
     max-width: 100%;
     display: block;
@@ -216,6 +382,7 @@ h3 {
     box-shadow: var(--shadow-soft);
 
 }
+/* stacks small screens */
 
 @media (max-width: 768px) {
     .hero-inner {
@@ -239,7 +406,7 @@ h3 {
     box-shadow 0.1s ease,
     background 0.1s ease,
     border-color 0.1s ease;
-    color 0.1s ease;
+    color: 0.1s ease;
 }
 
 .btn-primary {
@@ -287,62 +454,204 @@ h3 {
 .card-grid {
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
-.drink-card,
-.result-card {
+@media (max-width: 960px) {
+    .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .card-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+/* shared style for drink cards */
+
+/* card shell */
+.catalog-grid .drink-card {
+    position: relative;
+    background: var(--cream);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-subtle);
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease;
+    min-height: 320px;
+}
+
+
+/* keep result-card looking like before */
+.catalog-grid .result-card {
     position: relative;
     background: var(--cream);
     border-radius: var(--radius-lg);
     padding: 1.3rem 1.4rem 1.4rem;
     box-shadow: var(--shadow-subtle);
     overflow: hidden;
-    transition: 
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    background 0.18s ease;
 }
 
-.drink-card::before,
-.result-card::before {
-    content: "";
+/* FRONT (image + name) + BACK (description) */
+.catalog-grid .drink-front,
+.catalog-grid .drink-back {
     position: absolute;
-    inset:0;
-    background: linear-gradient(
-        135deg,
-        rgba(199, 171, 132, 0.13),
-        transparent 60%
-    );
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.18s ease;
+    inset: 0;
+    padding: 1.3rem 1.4rem 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
 }
 
-.drink-card::before,
-.result-card::before {
+/* front shown by default */
+.catalog-grid .drink-front {
     opacity: 1;
+    background: var(--blue);
+    transform: translateY(0);
+    padding: 1.3fdm 1.4rem 2.2rem;
 }
 
-.drink-card p {
+/* back hidden until hover */
+.catalog-grid .drink-back {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+/* square drink images */
+.catalog-grid .drink-image {
+  width: 75%;             
+  max-width: 260px;       
+  height: auto;           
+  align-self: center;      
+  margin-bottom: 0.5rem;   
+  border-radius: var(--radius-md);
+  object-fit: contain;     
+}
+
+
+/* text on the back side */
+.catalog-grid .drink-back p {
     color: var(--text-muted);
-    margin-bottom: 0.75rem;
-
+    margin-bottom: 0.6rem;
 }
 
-.result-meta,
 .result-meta {
     font-size: 0.9rem;
     color: var(--text-muted);
 }
 
+/* hover: lift + swap sides */
+.catalog-grid .drink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}
+
+.catalog-grid .drink-card:hover .drink-front {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.catalog-grid .drink-card:hover .drink-back {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* FRONT side: image + name */
+.catalog-grid .drink-front h3 {
+  color: var(--ivory-ish);       
+}
+
+/* BACK side: keep normal heading color */
+.catalog-grid .drink-back h3 {
+  color: var(--espresso-brown); 
+}
+
+/* BACK side body text stays readable */
+.catalog-grid .drink-back p,
+.catalog-grid .drink-back .result-meta {
+  color: var(--text-muted);
+}
+
+/* featured drink cards */
+
+/* .featured-drink-card {
+  background: var(--cream);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.6rem;
+  box-shadow: var(--shadow-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+} */
+
+.featured-drink-card {
+    background-color: var(--blue);
+    color: var(--off-white);
+    border-radius: 20px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); 
+}
+
+.featured-drink-image {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+
+    padding: 1rem;
+    background: #f4f1df;   
+    border-radius: 20px;  
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08); 
+}
+
+
+.featured-drink-card button {
+    margin-top: auto; 
+}
+
+
+.featured-drink-card h3 {
+  margin: 0;
+  font-size: 0.5rem;   
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  border-radius: 24px;
+}
+
+.featured-drink-card p {
+  margin: 0;
+  color: #f8f4e3;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+
 /* filters */
 
 .catalog-filter {
     margin: 1.8rem 0 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 0.75rem 1rem;
 
 }
 
@@ -402,12 +711,78 @@ textarea:focus{
 
 /* quiz */
 
-.quiz-form {
-    background: var(--cream);
-    padding: 1.9rem 1.75rem 1.6rem;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-soft);
+body[data-page="quiz"] {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Blue grid background */
+  background-color: var(--blue);
+  background-image:
+    linear-gradient(to right, rgba(255, 252, 216, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 252, 216, 0.35) 1px, transparent 1px);
+  background-size: 38px 38px;
+  background-position: center;
 }
+
+
+.quiz-page {
+  width: 100%;
+  padding: 3.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Smaller centered quiz card */
+.quiz-container {
+    max-width: 620px;    
+    margin: 0 auto;      
+    width: 90%;         
+}
+
+
+.quiz-progress {
+    width: 100%;
+    height: 14px;                 
+    background: rgba(255, 252, 216, 0.55);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 1.6rem;
+    box-shadow: 0 0 0 1px rgba(255, 252, 216, 0.4);
+}
+
+.quiz-progress-bar {
+    height: 100%;
+    width: 0;
+    background: var(--matcha-green);
+    border-radius: inherit;
+    transition: width 0.25s ease;
+}
+
+
+.quiz-question {
+    display: none;
+}
+
+.quiz-question.active {
+    display: block;
+}
+
+
+.quiz-form {
+  background: #bcc685; /* warmer cream */
+  border-radius: 32px;
+  padding: 2.4rem 2.6rem;
+  box-shadow:
+    0 26px 60px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(255, 252, 216, 0.7); 
+  min-height: auto;       
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
 
 .quiz-question + .quiz-question {
     margin-top: 1.5rem;
@@ -465,10 +840,6 @@ textarea:focus{
     background: rgba(199, 171, 132, 0.12);
 }
 
-.quiz-question input[type="radio"]::after {
-    opacity: 1;
-}
-
 .quiz-question input[type="radio"]:checked {
     border-color: var(--matcha-green);
 }
@@ -482,11 +853,50 @@ textarea:focus{
     font-weight: 500;
 }
 
+.quiz-question input[type="radio"]:checked::after {
+    opacity: 1;
+}
+
 .quiz-actions {
-    margin-top: 1.9rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
+  margin-top: 1.8rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.9rem;
+}
+
+/* Make NEXT feel primary, CANCEL lighter */
+.quiz-actions .btn-primary {
+  padding-inline: 1.8rem;
+}
+
+.quiz-actions .btn.btn-outline {
+  border-color: var(--matcha-green);
+  color: var(--matcha-green);
+  background: transparent;
+}
+
+.quiz-actions .btn.btn-outline:hover {
+  background: rgba(33, 87, 45, 0.06);
+}
+
+
+@media (max-width: 768px) {
+    body[data-page="quiz"] {
+        align-items: flex-start;
+    }
+
+    .quiz-container {
+        max-width: 100%;
+    }
+
+    .quiz-page {
+    padding: 2.5rem 1rem;
+    }
+
+    .quiz-form {
+    border-radius: 24px;
+    padding: 1.8rem 1.6rem;
+    }
 }
 
 /*recipe */
@@ -511,28 +921,26 @@ textarea:focus{
 }
 
 .image-placeholder {
-    position: relative;
-    width: 100%;
-    padding-top: 70%;
-    background: repeating-linear-gradient(
-        -45deg,
-        #f7efe2,
-        #f7efe2 6px,
-        #efe3d3 6px,
-        #efe3d3 12px
-    );
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-soft);
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1.1;          
+  background: var(--ivory-ish);
+  border-radius: var(--radius-lg);
+  border: 5px solid #3669a3;      
+  box-shadow: var(--shadow-soft);
+
+  display: flex;
+  align-items: center;          
+  justify-content: center;       
+  overflow: hidden;
+  padding: 1rem;                  
 }
 
-#recipe-image-label {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 0.92rem;
-    color: var(--espresso-brown);
-    text-align: center;
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;           
+  border-radius: 14px;            
 }
 
 .side-note {
@@ -547,6 +955,30 @@ textarea:focus{
     flex-wrap: wrap;
     gap: 0.8rem;
 }
+
+.recipe-side {
+    font-size: 0.95rem;
+}
+
+.recipe-extra {
+    margin-top: 1.4rem;
+}
+
+.recipe-extra h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+}
+
+.recipe-extra .recipe-list {
+    padding-left: 1.1rem;
+}
+
+.recipe-extra .recipe-list li {
+    margin-bottom: 0.25rem;
+}
+
+
+
 
 @media (max-width: 768px) {
     .recipe-layout {
@@ -574,9 +1006,93 @@ textarea:focus{
 }
 
 .site-footer {
-    border-top: 1px solid rgba(231, 219, 204, 0.8);
-    padding: 1.2rem 0 1.8rem;
-    margin-top: 2rem;
-    font-size: 0.85rem;
-    color: var(--text-muted)
+  
+  background-color: #b9c76f; 
+  padding: 0.85rem 0;
+  margin-top: 3rem;
 }
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-brand {
+  color: #ffffff;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.footer-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* about overrides - time crunch */
+
+#about {
+    margin-top: 3.7rem;   
+    scroll-margin-top: 140px;
+}
+
+
+/* Make the two headings the same size */
+#about h2,
+#about h3 {
+  font-size: 2.4rem;      
+  line-height: 1.1;
+}
+
+/* Make the paragraph text and bullet text the same size */
+#about .two-column p,
+#about .two-column li {
+  font-size: 1.15rem;     
+  line-height: 1.7;
+}
+
+/* Make hero taller + push content down */
+.hero {
+  padding: 6rem 0 5rem;  
+  padding-top: 4.5rem
+}
+
+
+.hero-card {
+  margin-top: 0.75rem;
+}
+.section-light {
+  margin-top: 4rem;
+}
+
+#featured-drinks .featured-drink-card h3 {
+    font-size: 1.5rem !important;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    color: #f8f4e3 !important;
+    margin-bottom: 0.5rem;
+    border-radius: 24px;
+}
+
+/* Center the title ONLY on the front of catalog cards */
+.catalog-grid .drink-front h3 {
+    text-align: center;
+    width: 100%; 
+}
+
