@@ -35,6 +35,7 @@ const DRINKS = [
             "Vanilla flavor: Add ⅛ tsp (0.5 ml) vanilla extract to the milk.",
             "Extra creamy: Add 1 tbsp (15 ml) half-and-half or sweet cream.",
             "Bolder chai: Steep a chai tea bag in the milk for 2-3 minutes",
+            "Pour matcha on top of the chai for a layered look"
         ],
 
         flavorNotes: [
@@ -142,14 +143,14 @@ const DRINKS = [
         pastry: "Dark Chocolate Almond Bar",
         ingredients: [
             "2 tsp (4 g) matcha powder (double strength)",
-            "2–3 tbsp (30–45 ml) hot water (170–175°F / 76–80°C)",
+            "2-3 tbsp (30-45 ml) hot water (170-175°F / 76-80°C)",
             "1 cup (240 ml) milk of choice",
-            "½–1 tsp (2–5 g) sweetener, optional",
+            "1/2-1 tsp (2-5 g) sweetener, optional",
             "½ cup (120 ml) ice cubes"
         ],
         steps: [
             "Sift 2 tsp (4 g) matcha into a bowl or glass to prevent clumps.",
-            "Add 2–3 tbsp (30–45 ml) hot water and whisk or froth vigorously until smooth and frothy.",
+            "Add 2-3 tbsp (30-45 ml) hot water and whisk or froth vigorously until smooth and frothy.",
             "Fill a serving glass with ½ cup (120 ml) ice cubes.",
             "Pour 1 cup (240 ml) milk over the ice and stir in sweetener if desired.",
             "Slowly pour the whisked matcha over the iced milk to create a bold, layered effect.",
@@ -157,7 +158,7 @@ const DRINKS = [
         ],
 
         upgrades: [
-            "Extra creamy: Add 1–2 tbsp (15–30 ml) oat cream or half-and-half.",
+            "Extra creamy: Add 1-2 tbsp (15-30 ml) oat cream or half-and-half.",
             "Layered visual: Pour matcha slowly over the milk for a clean gradient.",
             "Minty twist: Add fresh mint leaves or a drop of mint extract.",
             "Citrus brightness: Add a thin slice of lemon or orange peel.",
@@ -201,7 +202,7 @@ const DRINKS = [
 
         upgrades: [
             "Vanilla cream foam: Add ¼ tsp (1 ml) vanilla extract before frothing.",
-            "Lightly sweetened base: Add ½–1 tsp honey or maple syrup to the matcha.",
+            "Lightly sweetened base: Add 1/2-1 tsp honey or maple syrup to the matcha.",
             "Flavored foam: Add a hint of cinnamon, cocoa, or extra matcha.",
             "Extra creamy: Use 2 tbsp (30 ml) heavy cream or oat cream for a richer topping."
         ],
@@ -227,7 +228,7 @@ const DRINKS = [
         ingredients: [
             "1½ tsp (3 g) matcha powder (bold strength)",
             "4 oz (120 ml) hot water (175°F / 80°C)",
-            "½–1 tsp (2–5 g) sweetener, optional",
+            "1/2-1 tsp (2-5 g) sweetener, optional",
             "3 tbsp (45 ml) milk or plant-based milk",
             "2 tbsp (30 ml) heavy cream (for rich foam)"
         ],
@@ -273,7 +274,7 @@ const DRINKS = [
         ingredients: [
             "1 tsp (2 g) matcha powder",
             "4 oz (120 ml) hot water (175°F / 80°C)",
-            "1–2 tsp (5–10 g) honey",
+            "1-2 tsp (5-10 g) honey",
             "1 tsp (5 ml) fresh lemon juice",
             "Optional: lemon slice for garnish"
         ],
@@ -318,14 +319,14 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
             "Homemade blueberry syrup: ½ cup (75 g) blueberries, ¼ cup (50 g) sugar, 2 tbsp (30 ml) water",
-            "OR 1–2 tbsp (15–30 ml) store-bought blueberry syrup"
+            "OR 1-2 tbsp (15-30 ml) store-bought blueberry syrup"
         ],
 
         steps: [
-            "Make blueberry syrup (if homemade): combine blueberries, sugar, and water in a saucepan and cook 5–7 minutes until juicy and dissolved. Mash lightly and optionally strain. Let cool.",
+            "Make blueberry syrup (if homemade): combine blueberries, sugar, and water in a saucepan and cook 5-7 minutes until juicy and dissolved. Mash lightly and optionally strain. Let cool.",
             "Prepare matcha: add matcha and 2 tbsp hot water to a bowl or mug, whisk or froth until smooth and frothy.",
             "Heat 1 cup (240 ml) milk until steaming.",
-            "Add 1–2 tbsp blueberry syrup to the milk, or add directly to your mug.",
+            "Add 1-2 tbsp blueberry syrup to the milk, or add directly to your mug.",
             "Pour the warm blueberry milk into the mug.",
             "Slowly pour matcha over the milk and gently stir to combine.",
             "Optional: garnish with a few whole blueberries."
@@ -334,7 +335,7 @@ const DRINKS = [
         upgrades: [
             "Foamy latte: Froth the milk before adding for a creamy top.",
             "Extra fruity: Add 1 tsp (5 g) lemon juice to the syrup for brightness.",
-            "Vanilla note: Add ¼ tsp (1 ml) vanilla extract while heating the milk."
+            "Vanilla note: Add 1/4 tsp (1 ml) vanilla extract while heating the milk."
         ],
 
         flavorNotes: [
@@ -358,25 +359,25 @@ const DRINKS = [
 
         ingredients: [
             "1 tsp (2 g) matcha powder",
-            "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
+            "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
             "1 cup (240 ml) milk of choice (dairy or plant-based)",
-            "Homemade strawberry puree: ½ cup (75 g) strawberries, 1–2 tsp (5–10 g) sugar, 1–2 tsp (5–10 ml) water",
-            "OR 1–2 tbsp (15–30 ml) strawberry syrup, jam, or puree",
+            "Homemade strawberry puree: ½ cup (75 g) strawberries, 1-2 tsp (5-10 g) sugar, 1-2 tsp (5-10 ml) water",
+            "OR 1-2 tbsp (15-30 ml) strawberry syrup, jam, or puree",
             "½ cup (120 ml) ice cubes"
         ],
 
         steps: [
-            "Make the strawberry puree (if homemade): combine strawberries, sugar, and water in a small saucepan and cook 5–7 minutes until soft and juicy, then mash or blend. Optionally strain for a smoother syrup and let cool.",
+            "Make the strawberry puree (if homemade): combine strawberries, sugar, and water in a small saucepan and cook 5-7 minutes until soft and juicy, then mash or blend. Optionally strain for a smoother syrup and let cool.",
             "Prepare the matcha: add matcha and 2 tbsp hot water to a bowl or mug and whisk or froth until fully dissolved and lightly frothy.",
             "Fill a glass with ½ cup (120 ml) ice cubes.",
             "Pour 1 cup (240 ml) milk over the ice.",
-            "Stir in 1–2 tbsp (15–30 ml) strawberry puree, syrup, or jam until the milk is tinted and flavored.",
+            "Stir in 1-2 tbsp (15-30 ml) strawberry puree, syrup, or jam until the milk is tinted and flavored.",
             "Slowly pour the prepared matcha over the strawberry milk to create a layered effect, then gently stir to combine as desired.",
             "Optional: garnish with a fresh strawberry slice or drizzle extra strawberry puree on top."
         ],
 
         upgrades: [
-            "Extra creamy: Add 1–2 tbsp (15–30 ml) oat cream or sweet cream.",
+            "Extra creamy: Add 1-2 tbsp (15-30 ml) oat cream or sweet cream.",
             "Fruity twist: Add a few drops of lemon juice to the strawberry puree for extra brightness.",
             "Layered latte effect: Pour matcha very slowly over the milk and strawberry layer for a gradient look.",
             "Adjust sweetness: Add honey or sugar directly into the milk or matcha if you prefer a sweeter drink."
@@ -404,11 +405,11 @@ const DRINKS = [
 
         ingredients: [
             "1½ tsp (3 g) matcha powder (bold strength)",
-            "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
-            "½ cup (120 ml) sparkling water or soda",
-            "1–2 tsp (5–10 ml) yuzu juice or yuzu syrup",
-            "½ cup (120 ml) ice cubes",
-            "Sweetener optional: ½–1 tsp (2–5 g sugar, honey, or syrup)",
+            "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
+            "1/2 cup (120 ml) sparkling water or soda",
+            "1-2 tsp (5-10 ml) yuzu juice or yuzu syrup",
+            "1/2 cup (120 ml) ice cubes",
+            "Sweetener optional: 1/2-1 tsp (2-5 g sugar, honey, or syrup)",
             "Optional garnish: thin yuzu or lemon slice"
         ],
 
@@ -416,7 +417,7 @@ const DRINKS = [
             "Prepare the matcha: Add matcha and 2 tbsp hot water to a bowl or mug and whisk or froth vigorously until smooth and lightly frothy.",
             "Fill a glass with ½ cup (120 ml) ice cubes.",
             "Pour in ½ cup (120 ml) sparkling water.",
-            "Stir in 1–2 tsp (5–10 ml) yuzu juice or syrup and sweetener if using.",
+            "Stir in 1-2 tsp (5-10 ml) yuzu juice or syrup and sweetener if using.",
             "Slowly pour the whisked matcha over the sparkling water mixture to preserve bubbles and create a layered effect.",
             "Gently stir to combine as desired.",
             "Optional: Garnish with a thin slice of yuzu or lemon."
@@ -451,11 +452,11 @@ const DRINKS = [
 
         ingredients: [
             "1 tsp (2 g) matcha powder",
-            "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
+            "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
             "1 cup (240 ml) milk of choice",
             "2 tbsp (30 ml) heavy cream (optional, for richer foam)",
-            "½–1 tsp (2–5 g) sweetener optional",
-            "1–2 tsp (5–10 ml) fresh orange juice",
+            "1/2-1 tsp (2-5 g) sweetener optional",
+            "1-2 tsp (5-10 ml) fresh orange juice",
             "Optional: ¼ tsp (1 ml) orange zest for garnish"
         ],
 
@@ -471,7 +472,7 @@ const DRINKS = [
         ],
 
         upgrades: [
-            "Extra creamy: Add 1–2 tbsp (15–30 ml) sweet cream or oat cream.",
+            "Extra creamy: Add 1-2 tbsp (15-30 ml) sweet cream or oat cream.",
             "Citrus boost: Add a few drops of lemon juice to brighten the flavor.",
             "Foam art: Sprinkle matcha or orange zest on top.",
             "Layered latte: Pour matcha slowly for a gradient effect."
@@ -501,11 +502,11 @@ const DRINKS = [
             "1½ tsp (3 g) matcha powder",
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "½ cup (120 g) mango chunks (fresh or frozen)",
-            "1–2 tsp (5–10 g) sugar or honey (optional)",
-            "1–2 tsp (5–10 ml) water for blending if needed",
+            "1-2 tsp (5-10 g) sugar or honey (optional)",
+            "1-2 tsp (5-10 ml) water for blending if needed",
             "¾ cup (180 ml) milk of choice",
             "2 tbsp (30 ml) heavy cream (optional, for foam)",
-            "½–1 tsp (2–5 g) sweetener (optional)",
+            "½-1 tsp (2-5 g) sweetener (optional)",
             "½ cup (120 ml) ice cubes (optional for iced version)"
         ],
 
@@ -554,12 +555,12 @@ const DRINKS = [
             "1 tsp (2 g) matcha powder",
             "2 tbsp (30 ml) hot water or jasmine infusion",
             "1 cup (240 ml) milk of choice",
-            "1–2 tsp (5–10 ml) jasmine syrup or jasmine tea infusion",
-            "Optional: ½–1 tsp (2–5 g) sugar, honey, or syrup"
+            "1-2 tsp (5-10 ml) jasmine syrup or jasmine tea infusion",
+            "Optional: ½-1 tsp (2-5 g) sugar, honey, or syrup"
         ],
 
         steps: [
-            "Prepare a jasmine base by either using 1–2 tsp jasmine syrup or steeping 1 tsp dried jasmine petals in 2–3 tbsp hot water for 3 minutes, then straining.",
+            "Prepare a jasmine base by either using 1-2 tsp jasmine syrup or steeping 1 tsp dried jasmine petals in 2-3 tbsp hot water for 3 minutes, then straining.",
             "Whisk or froth matcha with 2 tbsp hot water or jasmine-infused water until smooth and frothy.",
             "Heat 1 cup milk until steaming and optionally froth for a light foam; stir in jasmine syrup or sweetener if desired.",
             "Pour the milk into a serving cup.",
@@ -602,15 +603,15 @@ const DRINKS = [
             "½ cup (120 ml) strong brewed Earl Grey tea",
             "½ cup (120 ml) milk of choice",
             "Optional: 2 tbsp (30 ml) heavy cream",
-            "Optional: ½–1 tsp (2–5 g) sweetener"
+            "Optional: 1/2-1 tsp (2-5 g) sweetener"
         ],
 
         steps: [
-            "Steep an Earl Grey tea bag or 1 tsp loose leaf in ½ cup hot water for 3–5 minutes, then remove the tea bag or strain. Sweeten lightly if desired.",
+            "Steep an Earl Grey tea bag or 1 tsp loose leaf in ½ cup hot water for 3-5 minutes, then remove the tea bag or strain. Sweeten lightly if desired.",
             "Whisk or froth matcha with 2 tbsp hot water until smooth and foamy.",
             "Heat ½ cup milk until steaming and optionally froth with heavy cream for a velvety foam.",
             "Pour the brewed Earl Grey tea into a serving cup and stir in the milk.",
-            "Slowly pour the whisked matcha over the tea–milk mixture to create a layered latte.",
+            "Slowly pour the whisked matcha over the tea-milk mixture to create a layered latte.",
             "Optionally top with milk foam and a light dusting of matcha powder."
         ],
 
@@ -644,10 +645,10 @@ const DRINKS = [
 
     ingredients: [
         "1 tsp (2 g) matcha powder",
-        "2–3 tbsp (30–45 ml) hot water (170–175°F / 76–80°C)",
+        "2-3 tbsp (30-45 ml) hot water (170-175°F / 76-80°C)",
         "1 cup (240 ml) chilled coconut water",
-        "1–2 tbsp (15–30 ml) milk or plant milk (for foam, optional)",
-        "Optional sweetener: ½–1 tsp (2–5 g) sugar, honey, or syrup",
+        "1-2 tbsp (15-30 ml) milk or plant milk (for foam, optional)",
+        "Optional sweetener: ½-1 tsp (2-5 g) sugar, honey, or syrup",
         "½ cup (120 ml) ice cubes",
         "Optional garnish: toasted coconut flakes or a thin lime slice"
     ],
@@ -655,8 +656,8 @@ const DRINKS = [
     steps: [
         "Fill a serving glass with ½ cup (120 ml) ice cubes and pour in 1 cup (240 ml) chilled coconut water.",
         "Sweeten the coconut water lightly if desired and stir to combine.",
-        "In a separate cup or small bowl, add matcha powder and 2–3 tbsp (30–45 ml) hot water.",
-        "Add 1–2 tbsp (15–30 ml) milk or plant milk if you want a creamier foam (optional).",
+        "In a separate cup or small bowl, add matcha powder and 2-3 tbsp (30-45 ml) hot water.",
+        "Add 1-2 tbsp (15-30 ml) milk or plant milk if you want a creamier foam (optional).",
         "Whisk or froth vigorously until the matcha mixture becomes thick, airy, and foamy.",
         "Gently spoon or pour the matcha foam over the top of the coconut water.",
         "Optional: Garnish with toasted coconut flakes or a thin lime slice."
@@ -704,7 +705,7 @@ const DRINKS = [
         ],
 
         steps: [
-            "Brew jasmine tea by steeping dried jasmine leaves or a jasmine tea bag in ½ cup hot water for 3–5 minutes; strain.",
+            "Brew jasmine tea by steeping dried jasmine leaves or a jasmine tea bag in ½ cup hot water for 3-5 minutes; strain.",
             "Whisk or froth matcha with 2 tbsp hot water until smooth and frothy.",
             "Make sea cream by whipping heavy cream, condensed milk, and a pinch of salt until thick but pourable; add vanilla if desired.",
             "Fill a glass with ice and pour in ½ cup milk and ½ cup brewed jasmine tea.",
@@ -745,19 +746,19 @@ const DRINKS = [
             "1 tsp (2 g) matcha powder",
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
-            "2 tbsp (30 ml) heavy cream (optional, for richer foam)",
-            "½–1 tsp (2–5 g) honey, sugar, or syrup (optional)",
-            "1–2 tsp (5–10 ml) lavender syrup",
+            "2 tbsp (30 ml) heavy cream or milk foam",
+            "1-2 tsp (5-10 ml) lavender syrup",
+            "½-1 tsp (2-5 g) honey or sugar (optional)",
             "Optional garnish: dried lavender buds"
         ],
 
         steps: [
-            "Whisk or froth matcha with 2 tbsp hot water until smooth and slightly frothy.",
-            "Heat 1 cup milk until steaming but not boiling.",
-            "Froth the warm milk with heavy cream until a light foam forms.",
-            "Stir lavender syrup and optional sweetener into the milk mixture.",
-            "Pour the lavender milk into a serving cup, then slowly pour in the prepared matcha.",
-            "Spoon foam gently on top and garnish with a few dried lavender buds if desired."
+            "Whisk matcha with 2 tbsp hot water until smooth and frothy.",
+            "Heat the milk until steaming but not boiling.",
+            "Stir optional sweetener into the milk, then pour the milk over the matcha base.",
+            "In a separate container, froth heavy cream or milk with lavender syrup until lightly thickened.",
+            "Slowly spoon or gently pour the lavender foam over the matcha latte to create a layered top.",
+            "Garnish with dried lavender buds if desired."
         ],
 
         upgrades: [
@@ -794,17 +795,17 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
             "2 tbsp (30 ml) heavy cream (optional, for richer foam)",
-            "½–1 tsp (2–5 g) sweetener (optional)",
+            "1/2-1 tsp (2-5 g) sweetener (optional)",
             "1 tsp (1 g) finely chopped fresh sage or ½ tsp dried sage",
             "1 tsp (5 ml) vanilla extract or vanilla syrup",
             "Optional garnish: fresh sage leaf or matcha dust"
         ],
 
         steps: [
-            "Heat milk in a saucepan over medium heat. Add sage and simmer gently for 2–3 minutes, without boiling.",
+            "Heat milk in a saucepan over medium heat. Add sage and simmer gently for 2-3 minutes, without boiling.",
             "Strain out the sage and stir in vanilla and optional sweetener.",
             "Whisk or froth matcha with 2 tbsp hot water until smooth and frothy.",
-            "Froth the warm sage–vanilla milk with heavy cream until light and airy.",
+            "Froth the warm sage-vanilla milk with heavy cream until light and airy.",
             "Pour the infused milk into a serving cup, then slowly add whisked matcha.",
             "Top with foam and optionally garnish with a small sage leaf or matcha dust."
         ],
@@ -843,20 +844,20 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "½ cup (120 ml) brewed oolong tea (strong)",
             "½ cup (120 ml) milk of choice",
-            "½–1 tsp (2–5 g) sweetener (optional)"
+            "½-1 tsp (2-5 g) sweetener (optional)"
         ],
 
         steps: [
-            "Brew oolong tea by steeping ½ tsp loose leaf or 1 tea bag in ½ cup hot water for 3–5 minutes. Sweeten lightly if desired.",
+            "Brew oolong tea by steeping ½ tsp loose leaf or 1 tea bag in ½ cup hot water for 3-5 minutes. Sweeten lightly if desired.",
             "Whisk or froth matcha with 2 tbsp hot water until smooth and frothy.",
             "Heat ½ cup milk until steaming; optionally froth for a smoother texture.",
             "Pour brewed oolong into a serving cup and stir in the warm milk.",
-            "Slowly pour whisked matcha over the tea–milk mixture and top with optional foam or matcha dust."
+            "Slowly pour whisked matcha over the tea-milk mixture and top with optional foam or matcha dust."
         ],
 
         upgrades: [
             "Use roasted oolong for a deeper, earthier flavor.",
-            "Add 1–2 tbsp cream for a richer, creamier texture.",
+            "Add 1-2 tbsp cream for a richer, creamier texture.",
             "Sweeten with honey, brown sugar, or maple syrup.",
             "Iced version: pour over ice for a refreshing twist."
         ],
@@ -888,15 +889,15 @@ const DRINKS = [
             "1 shot (30 ml) espresso or ½ cup (120 ml) strong brewed coffee",
             "½ cup (120 ml) milk of choice",
             "2 tbsp (30 ml) cream (optional, for richer foam)",
-            "½–1 tsp (2–5 g) sweetener (optional)"
+            "½-1 tsp (2-5 g) sweetener (optional)"
         ],
 
         steps: [
             "Brew 1 shot espresso or ½ cup strong coffee; optionally sweeten lightly.",
             "Whisk or froth matcha with 2 tbsp hot water until smooth and lightly foamy.",
             "Heat ½ cup milk until steaming; optionally froth with cream for a richer foam.",
-            "Pour the coffee into a serving cup and add the warm milk mixture.",
-            "Slowly pour the whisked matcha over the coffee–milk mixture, then top with foam and an optional dusting of matcha or cocoa."
+            "Combine the matcha with the warm milk mixture.",
+            "Slowly pour the coffee over the matcha-milk mixture, then top with foam and an optional dusting of matcha or cocoa."
         ],
 
         upgrades: [
@@ -930,10 +931,10 @@ const DRINKS = [
 
         ingredients: [
             "1 tsp (2 g) matcha powder",
-            "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
+            "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
             "1 cup (240 ml) milk of choice (dairy or plant-based)",
             "½ tsp (2 g) white or yellow miso paste",
-            "½–1 tsp (2–5 g) sweetener (optional: sugar, honey, or syrup)",
+            "½-1 tsp (2-5 g) sweetener (optional: sugar, honey, or syrup)",
             "½ cup (120 ml) ice cubes"
         ],
 
@@ -979,7 +980,7 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 shot (30 ml) espresso or ½ cup (120 ml) strong brewed coffee",
             "½ cup (120 ml) milk of choice",
-            "1–2 tsp (5–10 ml) caramel syrup",
+            "1-2 tsp (5-10 ml) caramel syrup",
             "2 tbsp (30 ml) cream (optional, for richness)",
             "½ cup (120 ml) ice cubes"
         ],
@@ -1026,8 +1027,8 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
             "2 tbsp (30 ml) heavy cream (optional for richer foam)",
-            "1–2 tsp (5–10 ml) toasted almond syrup",
-            "Optional sweetener: ½–1 tsp (2–5 g) sugar, honey, or syrup",
+            "1-2 tsp (5-10 ml) toasted almond syrup",
+            "Optional sweetener: ½-1 tsp (2-5 g) sugar, honey, or syrup",
             "Optional garnish: slivered toasted almonds"
         ],
 
@@ -1035,7 +1036,7 @@ const DRINKS = [
             "Whisk or froth matcha with 2 tbsp hot water until smooth and frothy.",
             "Heat 1 cup milk until steaming; froth with heavy cream for light, creamy foam.",
             "Stir toasted almond syrup and optional sweetener into the milk.",
-            "Pour milk–almond mixture into a serving cup.",
+            "Pour milk-almond mixture into a serving cup.",
             "Slowly pour whisked matcha over the milk.",
             "Spoon foam gently on top; optionally garnish with slivered toasted almonds."
         ],
@@ -1076,7 +1077,7 @@ const DRINKS = [
             "1 cup (240 ml) milk of choice",
             "2 tbsp (30 ml) heavy cream (optional for richer foam)",
             "1 tsp (3 g) black sesame paste or finely ground toasted black sesame",
-            "Optional sweetener: ½–1 tsp (2–5 g) sugar, honey, or syrup",
+            "Optional sweetener: ½-1 tsp (2-5 g) sugar, honey, or syrup",
             "Optional garnish: toasted black sesame seeds"
         ],
 
@@ -1124,7 +1125,7 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice (dairy or plant-based)",
             "1 tbsp (15 g) toasted chocolate powder or cocoa powder lightly toasted in a dry pan",
-            "Optional sweetener: ½–1 tsp (2–5 g) sugar, honey, or syrup",
+            "Optional sweetener: ½-1 tsp (2-5 g) sugar, honey, or syrup",
             "Optional: 2 tbsp (30 ml) heavy cream for foam",
             "Optional garnish: cocoa nibs or toasted chocolate shavings"
         ],
@@ -1218,7 +1219,7 @@ const DRINKS = [
             "1 tsp (2 g) matcha powder",
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
-            "1–2 tbsp (15–30 g) white chocolate chips or white chocolate syrup",
+            "1-2 tbsp (15-30 g) white chocolate chips or white chocolate syrup",
             "Optional: ½ tsp (2 g) sugar or honey",
             "½ cup (120 ml) ice cubes"
         ],
@@ -1262,16 +1263,12 @@ const DRINKS = [
         pastry: "Tiramisu or Coffee Cake",
 
         ingredients: [
-            // matcha
             "1½ tsp (3 g) matcha powder",
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
-            // coffee
             "½ cup (120 ml) strong brewed coffee or espresso, chilled",
-            // milk & cream
             "½ cup (120 ml) milk of choice",
             "2 tbsp (30 ml) cream or sweetened mascarpone-style cream (optional)",
             "Optional: 1 tsp (5 g) sugar, honey, or syrup",
-            // tiramisu flavor
             "1 tsp (5 ml) coffee liqueur or coffee syrup (optional)",
             "Cocoa powder for dusting",
             "½ cup (120 ml) ice cubes"
@@ -1322,7 +1319,7 @@ const DRINKS = [
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
             "2 tbsp (30 ml) heavy cream (optional)",
-            "Optional sweetener: ½–1 tsp (2–5 g) sugar, honey, or syrup",
+            "Optional sweetener: ½-1 tsp (2-5 g) sugar, honey, or syrup",
             "2 tbsp (30 ml) ube halaya or ube syrup",
             "Optional garnish: toasted coconut flakes or ube powder"
         ],
@@ -1369,8 +1366,8 @@ const DRINKS = [
             "1½ tsp (3 g) matcha powder",
             "2 tbsp (30 ml) hot water (175°F / 80°C)",
             "1 cup (240 ml) milk of choice",
-            "2–3 tbsp (30–45 ml) heavy cream for foam",
-            "Optional sweetener: ½–1 tsp (2–5 g) sugar, honey, or syrup",
+            "2-3 tbsp (30-45 ml) heavy cream for foam",
+            "Optional sweetener: ½-1 tsp (2-5 g) sugar, honey, or syrup",
             "2 tbsp (30 ml) banana puree or banana syrup",
             "Optional garnish: banana chips or cinnamon"
         ],
@@ -1415,10 +1412,10 @@ const DRINKS = [
 
     ingredients: [
         "1 tsp (2 g) matcha powder",
-        "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
+        "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
         "3/4 cup (180 ml) milk of choice",
         "1/2 cup (120 ml) eggnog",
-        "1–2 tsp (5–10 g) sweetener (optional)",
+        "1-2 tsp (5-10 g) sweetener (optional)",
         "Optional: pinch of nutmeg or cinnamon for garnish"
     ],
 
@@ -1426,7 +1423,7 @@ const DRINKS = [
         "Sift matcha into a bowl or mug to remove clumps.",
         "Add 2 tbsp hot water and whisk or froth until smooth and lightly foamy.",
         "In a small pot, heat milk and eggnog together over medium heat until steaming (do not boil).",
-        "Sweeten to taste if desired, then froth the eggnog–milk mixture for extra creaminess.",
+        "Sweeten to taste if desired, then froth the eggnog-milk mixture for extra creaminess.",
         "Pour the warm eggnog mixture into a serving cup.",
         "Slowly add the whisked matcha and stir gently to combine.",
         "Optional: Top with foam and a pinch of nutmeg or cinnamon."
@@ -1462,10 +1459,10 @@ const DRINKS = [
 
     ingredients: [
         "1½ tsp (3 g) matcha powder",
-        "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
+        "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
         "3/4 cup (180 ml) milk of choice",
-        "2–3 tbsp (30–45 ml) gingerbread syrup (or molasses + spices)",
-        "Optional sweetener: 1–2 tsp (5–10 g) sugar or honey, to taste",
+        "2-3 tbsp (30-45 ml) gingerbread syrup (or molasses + spices)",
+        "Optional sweetener: 1-2 tsp (5-10 g) sugar or honey, to taste",
         "Whipped cream, for topping",
         "Optional garnish: pinch of cinnamon or nutmeg, mini gingerbread cookie"
     ],
@@ -1511,11 +1508,11 @@ const DRINKS = [
 
     ingredients: [
         "1 tsp (2 g) matcha powder",
-        "2 tbsp (30 ml) hot water (170–175°F / 76–80°C)",
+        "2 tbsp (30 ml) hot water (170-175°F / 76-80°C)",
         "1 cup (240 ml) milk of choice",
-        "2–3 tbsp (20–30 g) white chocolate chips or white chocolate syrup",
-        "⅛–¼ tsp (1–2 ml) peppermint extract (a little goes a long way!)",
-        "Optional sweetener: ½–1 tsp (2–5 g) sugar or honey",
+        "2-3 tbsp (20-30 g) white chocolate chips or white chocolate syrup",
+        "⅛–¼ tsp (1-2 ml) peppermint extract (a little goes a long way!)",
+        "Optional sweetener: ½-1 tsp (2-5 g) sugar or honey",
         "Whipped cream or frothed milk, for topping",
         "Optional garnish: crushed candy cane or shaved white chocolate"
     ],
@@ -1533,7 +1530,7 @@ const DRINKS = [
     ],
 
     upgrades: [
-        "Extra creamy: Add 1–2 tbsp (15–30 ml) heavy cream to the milk while heating.",
+        "Extra creamy: Add 1-2 tbsp (15-30 ml) heavy cream to the milk while heating.",
         "Minty boost: Add an extra drop of peppermint extract for a sharper coolness.",
         "Dessert topping: Drizzle white chocolate syrup over whipped cream.",
         "Iced version: Chill the peppermint milk, pour over ice, then add whisked matcha for a frosty peppermint treat."
