@@ -1334,12 +1334,12 @@ body[data-page="result"] main {
   }
 }
 
-body[data-page="result"] p.centered {
-    display: block;
+body[data-page="result"] .centered {
+    display: block !important;  
     text-align: center;
-    margin-top: 1.2rem;
 }
 
-body[data-page="result"] p.centered a {
-    white-space: nowrap;
+body[data-page="result"] .centered a {
+    display: inline-block;
+    white-space: nowrap;      
 }
