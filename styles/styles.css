@@ -1234,7 +1234,7 @@ body[data-page="quiz"] .question-help {
 
 @media (max-width: 600px) { 
     body[data-page="quiz"] .quiz-page {
-        padding: 1rem 0.5 rem;
+        padding: 1rem 0.5rem;
     }
 
     body[data-page="quiz"] .quiz-container {
@@ -1249,7 +1249,7 @@ body[data-page="quiz"] .question-help {
         border-radius: 24px;
     }
 
-    body[data-page="quiz"] .question help {
+    body[data-page="quiz"] .question-help {
         font-size: 1.2rem;
     }
 
@@ -1346,16 +1346,24 @@ body[data-page="result"] .centered a {
 
 @media (max-width: 520px) {
     body[data-page="catalog"] .catalog-filters {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        display: flex;
+        flex-wrap: nowrap;
         gap: 0.6rem;
-  }
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 0.25rem;
+        margin: 1.2rem 0 1rem;
+    } 
 
   body[data-page="catalog"] .catalog-filters .filter-btn {
-    width: 100%;
-    text-align: center;
-    white-space: normal;
-    line-height: 1.1;
-    padding: 0.55rem 0.75rem;
-    font-size: 0.72rem;
-  }
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 0.55rem 0.9rem;
+        font-size: 0.78rem;
+    }
+
+  body[data-page="catalog"] .catalog-filters::-webkit-scrollbar {
+        display: none;
+    }
 }
+
