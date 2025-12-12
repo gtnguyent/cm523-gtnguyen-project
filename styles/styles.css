@@ -1269,3 +1269,67 @@ body[data-page="quiz"] .question-help {
     }
 }
 
+body[data-page="result"] {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+body[data-page="result"] main {
+    flex: 1;
+}
+
+@media (max-width: 520px) {
+  body[data-page="result"] .section {
+    padding: 1.6rem 0;
+  }
+
+  body[data-page="result"] .container.narrow {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  body[data-page="result"] h1 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 0.6rem;
+  }
+
+  body[data-page="result"] .section-intro {
+    font-size: 1rem;
+  }
+
+  body[data-page="result"] .result-card {
+    padding: 1.2rem 1.1rem 1.3rem;
+  }
+
+  body[data-page="result"] .result-drink-image {
+    max-width: 220px;
+    margin-bottom: 1rem;
+  }
+
+  body[data-page="result"] .result-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  body[data-page="result"] .result-actions .btn {
+    width: 100%;
+    min-width: 0;
+    height: 52px;
+    max-width: none;
+
+  }
+
+    body[data-page="result"] .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+
+  body[data-page="result"] .footer-nav {
+    flex-wrap: wrap;
+    gap: 0.6rem 1rem;
+  }
+}
