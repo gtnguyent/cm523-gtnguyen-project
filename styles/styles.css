@@ -1345,7 +1345,7 @@ body[data-page="result"] .centered a {
 }
 
 @media (max-width: 520px) {
-    .catalog-filter {
+    .catalog-filters {
         grid-template-columns: repeat(2, 1fr);
         gap: 0.5rem;
         margin: 1.25rem 0 1rem;
