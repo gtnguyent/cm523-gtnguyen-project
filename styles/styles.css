@@ -43,6 +43,12 @@ p {
     box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 /* base style */ 
 
 body {
@@ -250,11 +256,6 @@ h3 {
     color: var(--espresso-brown);
     font-size: 1.3rem;
 
-}
-
-html,
-body {
-    overflow-x: hidden;
 }
 
 @media (max-width: 520px) {
