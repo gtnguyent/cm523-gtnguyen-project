@@ -1010,53 +1010,6 @@ body[data-page="quiz"] .question-help {
     }
 }
 
-/* bigger quiz card on phone */
-
-@media (max-width: 480px) {
-    .quiz-page {
-        padding: 1.25rem 0.75rem;
-    }
-
-    .quiz-container {
-        width: 100%;
-        max-width: none;
-    }
-
-    .quiz-form {
-        width: 100%;
-        max-width: none;
-        padding: 2.2rem 1.6rem;
-        border-radius: 26px;
-    }
-
-    .quiz-question h2 {
-        font-size: 2.1rem;
-    }
-
-    .question-help {
-        font-size: 1.15rem;
-    }
-
-    .quiz-question label {
-        font-size: 1.15rem;
-        padding: 0.75rem 0.85rem;
-    }
-
-    .quiz-actions {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0.75rem;
-    }
-
-  .quiz-actions .btn,
-  .quiz-actions a.btn {
-        width: 100%;
-    }
-
-
-}
-
-
 /*recipe */
 
 .recipe-layout {
@@ -1275,5 +1228,44 @@ body[data-page="quiz"] .question-help {
 .catalog-grid .drink-front h3 {
     text-align: center;
     width: 100%; 
+}
+
+/* bigger quiz card on phone */
+
+@media (max-width: 600px) { 
+    body[data-page="quiz"] .quiz-page {
+        padding: 1rem 0.5 rem;
+    }
+
+    body[data-page="quiz"] .quiz-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body[data-page="quiz"] .quiz-form {
+        width: 100%;
+        max-width: 100%;
+        padding: 2.5rem 1.75rem; 
+        border-radius: 24px;
+    }
+
+    body[data-page="quiz"] .question help {
+        font-size: 1.2rem;
+    }
+
+    body[data-page="quiz"] .quiz-question label {
+        font-size: 1.2rem;
+        padding: 0.9rem 1rem;
+    }
+
+    body[data-page="quiz"] .quiz-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    body[data-page="quiz"] .quiz-actions .btn,
+    body[data-page="quiz"] .quiz-actions a.btn {
+        width: 100%;
+    }
 }
 
