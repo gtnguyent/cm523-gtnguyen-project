@@ -1,15 +1,3 @@
-/* ===== YOUR CSS GOES HERE ===== */
-/* ===== START BY IMPORTING YOUR FONTS ===== */ 
-/* ===== NEXT WRITE GLOBAL STYLES, THEN USE MEDIA QUERIES FOR LAYOUT/STYLE ADJUSTMENTS ===== */
-/* ===== STARTER CSS BELOW FOR body AND p IS JUST AN EXAMPLE... YOU MAY DELETE IT ===== */
-
-/** body {
-    background: magenta;
-}
-p {
-    font-size: 2em;
-} 
-*/
 
 
 @import url("https://fonts.googleapis.com/css2?family=Jua&family=Poppins:wght@300;400;500;600;700&display=swap");
@@ -57,7 +45,6 @@ body {
   overflow-x: clip;
 }
 
-
 /* base style */ 
 
 body {
@@ -73,7 +60,6 @@ img, svg {
   height: auto;
   display: block;
 }
-
 
 /* for selections */
 
@@ -149,6 +135,7 @@ h3 {
 .section-light {
     margin-top: 4rem;
 }
+
 /* results page */
 .narrow {
     max-width: 720px;
@@ -246,24 +233,12 @@ h3 {
     background: #bcc87f;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(231, 219, 204, 0.8);
-    top: 0;
 }
 
 main {
     position: relative;
     z-index: 1;
 }
-
-@media (max-width: 520px) {
-  .site-header {
-    padding: 0.25rem 0;
-  }
-
-  .logo img {
-    height: 60px;
-  }
-}
-
 
 .logo img {
     height: 90px;
@@ -354,15 +329,6 @@ main {
 /* mobile - home - 1 column */
 
 @media (max-width: 480px) {
-    .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-    }
-
-    .hero-card--copy {
-        max-width: 100%;
-        padding: 2rem 1.5rem;
-    }
 
     .hero-image-inner {
     max-width: 100%;
@@ -375,11 +341,6 @@ main {
 
     .card-grid {
         grid-template-columns: 1fr;
-    }
-
-    .btn {
-        width: 100%;
-        max-width: 320px;
     }
 
     .centered {
@@ -526,14 +487,7 @@ main {
     margin-bottom: 1.6rem;
 
 }
- /*image*/
-.hero-image img {
-    max-width: 100%;
-    display: block;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-soft);
 
-}
 /* stacks small screens */
 
 @media (max-width: 768px) {
@@ -557,8 +511,8 @@ main {
     transform 0.1s ease,
     box-shadow 0.1s ease,
     background 0.1s ease,
-    border-color 0.1s ease;
-    color: 0.1s ease;
+    border-color 0.1s ease,
+    color 0.1s ease;
 }
 
 .btn-primary {
@@ -669,7 +623,7 @@ main {
     opacity: 1;
     background: var(--blue);
     transform: translateY(0);
-    padding: 1.3fdm 1.4rem 2.2rem;
+    padding: 1.3rem 1.4rem 2.2rem;
 }
 
 /* back hidden until hover */
@@ -975,10 +929,6 @@ body[data-page="quiz"] .question-help {
 .quiz-question label:has(input[type="radio"]:checked) {
     background: rgba(33, 87, 45, 0.08);
     border-color: var(--matcha-green);
-}
-
-.quiz-question input[type="radio"]:checked + span {
-    font-weight: 500;
 }
 
 .quiz-question input[type="radio"]:checked::after {
